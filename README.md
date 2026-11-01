@@ -38,7 +38,7 @@ num exemplo antes de rodar em todos os golpes, e o resultado final é comparado 
 | Seção | O que faz |
 |---|---|
 | 0–1 | Ambiente e parâmetros do experimento, todos numa célula |
-| 2 | Download dos 16 rallies rotulados (conferidos por sha256); anotações e homografias lidas de [`sample/`](sample/) |
+| 2 | Download dos 16 rallies rotulados; anotações e homografias lidas de [`sample/`](sample/) |
 | 3 | Pesos do YOLO11m-pose e do TrackNet |
 | 4 | Bola: TrackNet nos 16 rallies, com remoção de outliers e interpolação |
 | 5 | Pose: YOLO11m-pose (1920 px) + ByteTrack nas janelas de ±12 frames de cada golpe |
@@ -46,9 +46,8 @@ num exemplo antes de rodar em todos os golpes, e o resultado final é comparado 
 | 7–8 | Atribuição (E1) e ablação (método, σ, janela, sem bola, sem fallback) |
 | 9–10 | Análise de erros, exemplos desenhados e comparação com a referência |
 
-A extração de pose e bola é retomável. Com `USAR_DRIVE = True` (primeira célula), o progresso fica no Google Drive
-e sobrevive a uma queda da sessão. Os números podem variar alguns décimos em relação à tabela, porque a pose e a
-bola são recalculadas noutra GPU (a referência foi gerada num Apple M4, via MPS).
+Os números podem variar alguns décimos em relação à tabela, porque a pose e a bola são recalculadas noutra GPU (a
+referência foi gerada num Apple M4, via MPS).
 
 ## Principais decisões da replicação
 

@@ -1,13 +1,13 @@
 __pycache__/
 *.pyc
 .venv/
-.pytest_cache/
 *.egg-info/
 .DS_Store
 .ipynb_checkpoints/
 
-# gerados pelo notebook (dados do dataset, pesos e resultados não são versionados)
+# gerados pelo notebook (vídeos, pesos, código do TrackNet e resultados não são versionados)
 data/
-third_party/
+weights/
+TrackNet/
 outputs/
 *.pt

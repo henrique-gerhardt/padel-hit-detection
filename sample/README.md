@@ -72,7 +72,7 @@ from padelrep.calibration import median_background, suggest
 from padelrep.court import CourtModel
 
 cam = json.load(open("sample/calibration/cameras.json"))["vigo"]
-bg = median_background([f"data/raw/rallies/{v}.mp4" for v in cam["background_videos"]])
+bg = median_background([f"data/rallies/{v}.mp4" for v in cam["background_videos"]])
 points, _, _ = suggest(bg, cam["bands"])
 assert points == cam["points_px"]
 court = CourtModel.from_named_points(points)
