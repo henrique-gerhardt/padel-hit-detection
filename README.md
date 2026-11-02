@@ -45,6 +45,7 @@ num exemplo antes de rodar em todos os golpes, e o resultado final é comparado 
 | 6 | Identidade: slot de cada jogador (fundo/frente × esquerda/direita) pela homografia |
 | 7–8 | Atribuição (E1) e ablação (método, σ, janela, sem bola, sem fallback) |
 | 9–10 | Análise de erros, exemplos desenhados e comparação com a referência |
+| 11 | Resumo impresso: acurácias com IC95 e alvo do artigo, melhor e pior variante, erros por categoria |
 
 Os números podem variar alguns décimos em relação à tabela, porque a pose e a bola são recalculadas noutra GPU (a
 referência foi gerada num Apple M4, via MPS).
